@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/811b4ca735.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portifolio">Portifolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-house" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>University Student</p>
+            <h1>Hi! I'm<span>Tharusha</span><br> Pieris<br>From SLTC University of Sri Lanka</h1>
+        </div>
+    </div>
+</div>
+<!-----------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Profil.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About myself</h1>
+                <p>I'm a 1st year student in the university of SLTC Si Lanka. I study in the major Cyber Security.
+                     And my goal is to get a first class degree and have flying colors in each semester.
+                    I'm a passionate and hard worker and also willing to make social status to a maximum within the community i live in. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Editing</span><br>Editing videos and photos</li>
+                            <li><span>Coding</span><br>Python Coding</li>
+                            <li><span>Design</span><br>Designing logos and thumbnails</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1year</span><br>Editing videos and photos</li>
+                            <li><span>6months</span><br>Python Coding in University</li>
+                            <li><span>4years</span><br>Personal logos and video thumbnails in youtube, Shirt designs.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2010-2020</span><br>Ordinary Level examination pass(EM) [9As].</li>
+                            <li><span>2020-2023</span><br>Advanced Level examination pass(SM) [C,2S,A].</li>
+                            <li><span>2024</span><br>Currently studying Cyber Security in university.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-drupal"></i>
+                <h2>Logo&Graphic Design</h2>
+                <p>Providing logos and graphic designs 
+                    according to your ideas or from scratch.</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>Video&Photo Editing</h2>
+                <p>Send your photos or videos that needs to be edited
+                    how would you want it or from scratch.</p>
+                    <a href="#">learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-------------portifolio----------->
+<div id="portifolio">
+    <div class="container">
+        <h1 class="sub-title">Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/sample_0.png">
+                <div class="layer">
+                    <h3>Youtube thumbnails and logos</h3>
+                    <p>Futuristic and artistic designs
+                         according to 
+                         my ideas or inspired by you.</p>
+                         <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/sample_0 (1).png">
+                <div class="layer">
+                    <h3>Editing pics and vids</h3>
+                    <p>Edits to your desire or in my own eye.</p>
+                         <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tharusharaptor11@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+94702194737</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61556780587923&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/tharu_vamp/profilecard/?igsh=MWhjM3JmMmx4cWhlbg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/tharush26179058?s=21"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Tharusha. Made with<i class="fa-solid fa-code-pull-request"></i> by VsCode</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBl9hVgdlxloLuhTeMlVcD00klkOs4UqVrWrmhd3_AqKc5-GTbIWjSwCu0EI3O_g8SjA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
